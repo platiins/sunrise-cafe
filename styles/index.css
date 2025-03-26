@@ -1,3 +1,31 @@
-h1 {
-  color: red;
+@font-face {
+  font-family: "Playfair Display";
+  src: url(../assets/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf) format(truetype);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../assets/fonts/Poppins/Poppins-Regular.ttf) format(truetype);
+  font-weight: 400;
+}
+.header {
+  height: 100vh;
+  background-color: #f5e7d3;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  color: #4b382a;
+}
+.header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 70px;
+  text-align: center;
+}
+.header h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  color: #5e6452;
+  text-align: center;
 }/*# sourceMappingURL=index.css.map */

@@ -1,5 +1,38 @@
 @use "mixins" as *;
 
-h1 {
-  color: red;
+// FONTS
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url(../assets/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf)
+    format(truetype);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../assets/fonts/Poppins/Poppins-Regular.ttf) format(truetype);
+  font-weight: 400;
+}
+
+// HEADER
+
+.header {
+  height: 100vh;
+  background-color: #f5e7d3;
+  @include flex(row, center, center, 0);
+  color: #4b382a;
+
+  h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 70px;
+    text-align: center;
+  }
+
+  h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    color: #5e6452;
+    text-align: center;
+  }
 }
